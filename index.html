@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ================================================
+    SEO - Ajuste título e descrição conforme necessário
+  ================================================ -->
+  <title>New Talent – Escola de DJ em Balneário Camboriú</title>
+  <meta name="description" content="Aprenda a mixar e produzir música com a New Talent, escola de DJ em Balneário Camboriú. Cursos práticos de DJ, produção musical e locação de equipamentos. Entre em contato pelo WhatsApp." />
+  <meta name="keywords" content="escola de DJ, curso de DJ, produção musical, mixagem, DJ Balneário Camboriú, aulas de DJ, locação de equipamentos DJ, New Talent" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="New Talent – Escola de DJ em Balneário Camboriú" />
+  <meta property="og:description" content="Aprenda a mixar e produzir música com a New Talent. Cursos práticos, estrutura profissional, evolução real." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://newtalentdj.com.br" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ====================================================
+    NAVBAR – Menu fixo no topo
+  ==================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+
+        <!-- Logo -->
+        <a href="#inicio" class="nav-logo">
+          <div class="logo-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" stroke="url(#logo-grad)" stroke-width="2"/>
+              <path d="M10 20 C10 14, 14 10, 16 10 C18 10, 22 14, 22 20" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <circle cx="10" cy="21" r="3" fill="url(#logo-grad)"/>
+              <circle cx="22" cy="21" r="3" fill="url(#logo-grad)"/>
+              <defs>
+                <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#a78bfa"/>
+                  <stop offset="0.5" stop-color="#60a5fa"/>
+                  <stop offset="1" stop-color="#f472b6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-name">NEW TALENT</span>
+            <span class="logo-sub">ESCOLA DE DJ</span>
+          </div>
+        </a>
+
+        <!-- Links desktop -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#cursos" class="nav-link">Cursos</a></li>
+          <li><a href="#como-funciona" class="nav-link">Como funciona</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+
+        <!-- CTA desktop -->
+        <!-- WHATSAPP: troque 5547999999999 pelo número real (com DDD, sem símbolos) -->
+        <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-nav" target="_blank" rel="noopener noreferrer">
+          Fale Conosco
+        </a>
+
+        <!-- Hamburger mobile -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#inicio" class="mobile-link">Início</a></li>
+        <li><a href="#cursos" class="mobile-link">Cursos</a></li>
+        <li><a href="#como-funciona" class="mobile-link">Como funciona</a></li>
+        <li><a href="#contato" class="mobile-link">Contato</a></li>
+      </ul>
+      <!-- WHATSAPP: troque o número abaixo -->
+      <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-primary mobile-cta" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chamar no WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- ====================================================
+    HERO – Seção principal de impacto
+  ==================================================== -->
+  <section id="inicio" class="hero">
+    <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+    <!-- Orbs de fundo -->
+    <div class="hero-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-orb orb-2" aria-hidden="true"></div>
+    <div class="hero-orb orb-3" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-wrapper">
+
+        <!-- Conteúdo esquerdo -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Balneário Camboriú · SC
+          </div>
+
+          <h1 class="hero-title">
+            Aprenda a mixar,<br />
+            <span class="gradient-text">produzir</span> e viver<br />
+            a música de verdade.
+          </h1>
+
+          <p class="hero-subtitle">
+            Entre para o universo DJ com aulas práticas, estrutura profissional e acompanhamento para acelerar sua evolução.
+          </p>
+
+          <div class="hero-actions">
+            <!-- WHATSAPP: troque o número abaixo -->
+            <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-primary" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Quero Começar
+            </a>
+            <a href="#cursos" class="btn-secondary">
+              Ver Cursos
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-value">500+</span>
+              <span class="stat-label">Alunos formados</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <span class="stat-value">5★</span>
+              <span class="stat-label">Avaliação</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Prático</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual direito – animação decorativa -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-container">
+            <div class="visual-ring ring-1"></div>
+            <div class="visual-ring ring-2"></div>
+            <div class="visual-ring ring-3"></div>
+            <div class="visual-glow"></div>
+
+            <div class="visual-center">
+              <!-- Headphones icon SVG -->
+              <svg class="headphones-icon" width="90" height="90" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+                <path d="M20 55 C20 33 33 20 50 20 C67 20 80 33 80 55" stroke="url(#hgrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+                <rect x="12" y="52" width="16" height="26" rx="8" fill="url(#hgrad)"/>
+                <rect x="72" y="52" width="16" height="26" rx="8" fill="url(#hgrad)"/>
+                <defs>
+                  <linearGradient id="hgrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#a78bfa"/>
+                    <stop offset="0.5" stop-color="#60a5fa"/>
+                    <stop offset="1" stop-color="#f472b6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <!-- Equalizer animado -->
+              <div class="equalizer">
+                <div class="eq-bar" style="--delay:0s; --max-h:18px"></div>
+                <div class="eq-bar" style="--delay:0.1s; --max-h:38px"></div>
+                <div class="eq-bar" style="--delay:0.2s; --max-h:52px"></div>
+                <div class="eq-bar" style="--delay:0.05s; --max-h:30px"></div>
+                <div class="eq-bar" style="--delay:0.15s; --max-h:60px"></div>
+                <div class="eq-bar" style="--delay:0.25s; --max-h:44px"></div>
+                <div class="eq-bar" style="--delay:0.08s; --max-h:28px"></div>
+                <div class="eq-bar" style="--delay:0.18s; --max-h:50px"></div>
+                <div class="eq-bar" style="--delay:0.3s; --max-h:36px"></div>
+                <div class="eq-bar" style="--delay:0.12s; --max-h:22px"></div>
+                <div class="eq-bar" style="--delay:0.22s; --max-h:46px"></div>
+                <div class="eq-bar" style="--delay:0.04s; --max-h:32px"></div>
+              </div>
+            </div>
+
+            <!-- Floating badges -->
+            <div class="float-badge badge-tl">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              PRO STUDIO
+            </div>
+            <div class="float-badge badge-br">
+              <span class="live-dot"></span>
+              LIVE
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator">
+      <span>DESCUBRA</span>
+      <div class="scroll-chevron">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+    CURSOS – Sua jornada começa aqui
+  ==================================================== -->
+  <section id="cursos" class="section courses-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">SUA JORNADA COMEÇA AQUI</span>
+        <h2 class="section-title">Escolha seu caminho<br /><span class="gradient-text">na música</span></h2>
+        <p class="section-subtitle">Três caminhos distintos para você entrar ou evoluir no universo da música eletrônica.</p>
+      </div>
+
+      <div class="courses-grid">
+
+        <!-- Card 1: Curso de DJ -->
+        <article class="course-card fade-in-up" style="--card-delay: 0.1s">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 18V5l12-2v13"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+          </div>
+          <div class="card-tag">MAIS POPULAR</div>
+          <h3 class="card-title">Curso de DJ</h3>
+          <p class="card-desc">Aprenda mixagem do zero ao avançado com foco prático e vivência real de pista. Técnicas profissionais, leitura de pistas e desenvolvimento artístico.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Do zero ao avançado
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Equipamentos profissionais
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Acompanhamento individual
+            </li>
+          </ul>
+          <!-- WHATSAPP: troque o número abaixo -->
+          <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-card" target="_blank" rel="noopener noreferrer">
+            Quero saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <!-- Card 2: Produção Musical -->
+        <article class="course-card fade-in-up" style="--card-delay: 0.2s">
+          <div class="card-glow"></div>
+          <div class="card-icon card-icon--blue">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Produção Musical</h3>
+          <p class="card-desc">Desenvolva suas músicas com técnica, criatividade e qualidade profissional. Do beat ao master, você aprende a criar com identidade.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              DAW profissional
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Mixagem e masterização
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Identidade sonora própria
+            </li>
+          </ul>
+          <!-- WHATSAPP: troque o número abaixo -->
+          <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-card btn-card--blue" target="_blank" rel="noopener noreferrer">
+            Quero saber mais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <!-- Card 3: Locação de Equipamentos -->
+        <article class="course-card fade-in-up" style="--card-delay: 0.3s">
+          <div class="card-glow"></div>
+          <div class="card-icon card-icon--magenta">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="8" width="20" height="12" rx="2"/>
+              <path d="M6 8V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/>
+              <circle cx="12" cy="14" r="2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Locação de Equipamentos</h3>
+          <p class="card-desc">Equipamentos para DJs com qualidade e estrutura para suas necessidades. Ideal para eventos, ensaios e performances ao vivo.</p>
+          <ul class="card-features">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Controladoras e mixers
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Equipamento de som
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Suporte técnico incluso
+            </li>
+          </ul>
+          <!-- WHATSAPP: troque o número abaixo -->
+          <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-card btn-card--magenta" target="_blank" rel="noopener noreferrer">
+            Solicitar orçamento
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+    PARA QUEM É – Audiência
+  ==================================================== -->
+  <section id="para-quem" class="section audience-section">
+    <div class="container">
+      <div class="audience-inner">
+        <div class="audience-left fade-in-up">
+          <span class="section-tag">PARA QUEM É</span>
+          <h2 class="section-title">Seu espaço<br /><span class="gradient-text">está aqui</span></h2>
+          <p class="section-subtitle" style="max-width: 420px;">A New Talent foi criada para quem quer mais do que um hobby — para quem quer fazer da música uma parte real da sua vida.</p>
+
+          <!-- WHATSAPP: troque o número abaixo -->
+          <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar com a escola
+          </a>
+        </div>
+
+        <div class="audience-right">
+          <div class="audience-cards">
+            <div class="audience-card fade-in-up" style="--card-delay: 0.05s">
+              <div class="audience-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div>
+                <strong>Nunca tocou antes?</strong>
+                <p>Perfeito. Nossas aulas começam do absoluto zero e te levam até onde você quiser chegar.</p>
+              </div>
+            </div>
+
+            <div class="audience-card fade-in-up" style="--card-delay: 0.1s">
+              <div class="audience-icon audience-icon--blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div>
+                <strong>Quer se profissionalizar?</strong>
+                <p>Desenvolvemos sua técnica, identidade artística e presença de palco para carreiras de verdade.</p>
+              </div>
+            </div>
+
+            <div class="audience-card fade-in-up" style="--card-delay: 0.15s">
+              <div class="audience-icon audience-icon--magenta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <strong>Quer produzir suas músicas?</strong>
+                <p>Aprenda a criar do zero: beat, melodia, arranjo, mix e master com qualidade de lançamento.</p>
+              </div>
+            </div>
+
+            <div class="audience-card fade-in-up" style="--card-delay: 0.2s">
+              <div class="audience-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <strong>Busca estrutura e prática real?</strong>
+                <p>Equipamentos profissionais, aulas com vivência de pista e metodologia que funciona.</p>
+              </div>
+            </div>
+
+            <div class="audience-card fade-in-up" style="--card-delay: 0.25s">
+              <div class="audience-icon audience-icon--blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <strong>Precisa de locação?</strong>
+                <p>Equipamentos de qualidade disponíveis para seu evento ou performance. Suporte técnico garantido.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+    COMO FUNCIONA – Timeline / Passo a passo
+  ==================================================== -->
+  <section id="como-funciona" class="section steps-section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="section-tag">COMO FUNCIONA</span>
+        <h2 class="section-title">Do contato ao<br /><span class="gradient-text">primeiro set</span></h2>
+        <p class="section-subtitle">Começar é mais simples do que parece. Veja como funciona.</p>
+      </div>
+
+      <div class="steps-wrapper">
+        <div class="steps-line" aria-hidden="true"></div>
+        <div class="steps-grid">
+
+          <div class="step-item fade-in-up" style="--card-delay: 0.05s">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Você entra em contato</h3>
+              <p>Manda uma mensagem no WhatsApp. Sem compromisso, sem pressão. É só uma conversa.</p>
+            </div>
+          </div>
+
+          <div class="step-item fade-in-up" style="--card-delay: 0.1s">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Entende qual curso combina</h3>
+              <p>Te ajudamos a identificar o melhor caminho de acordo com seu objetivo e nível atual.</p>
+            </div>
+          </div>
+
+          <div class="step-item fade-in-up" style="--card-delay: 0.15s">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Conhece a metodologia</h3>
+              <p>Você entende como as aulas funcionam, horários disponíveis e como é a dinâmica da escola.</p>
+            </div>
+          </div>
+
+          <div class="step-item fade-in-up" style="--card-delay: 0.2s">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Faz sua matrícula</h3>
+              <p>Processo simples e rápido. Você escolhe sua turma e já garante sua vaga.</p>
+            </div>
+          </div>
+
+          <div class="step-item fade-in-up" style="--card-delay: 0.25s">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3>Começa sua evolução</h3>
+              <p>A partir daí é prática, evolução e muita música. Seu talento ganha forma.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ====================================================
+    CTA FINAL – Seção de conversão
+  ==================================================== -->
+  <section id="contato" class="section final-cta-section">
+    <div class="container">
+      <div class="final-cta-inner fade-in-up">
+        <div class="cta-orb cta-orb-1" aria-hidden="true"></div>
+        <div class="cta-orb cta-orb-2" aria-hidden="true"></div>
+
+        <div class="final-cta-content">
+          <span class="section-tag">COMECE AGORA</span>
+          <h2 class="final-cta-title">Seu talento merece<br /><span class="gradient-text">sair do fone</span><br />e ganhar o mundo.</h2>
+          <p class="final-cta-sub">Fale com a New Talent e descubra como começar sua jornada no universo DJ. Balneário Camboriú espera por você.</p>
+
+          <div class="final-cta-actions">
+            <!-- WHATSAPP: troque o número abaixo -->
+            <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="btn-primary btn-xl" target="_blank" rel="noopener noreferrer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chamar no WhatsApp
+            </a>
+            <!-- INSTAGRAM: troque o link abaixo -->
+            <a href="https://www.instagram.com/newtalent_escola_dj_balneario/" class="btn-secondary btn-xl" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Ver no Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+    FOOTER
+  ==================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <!-- Logo e info -->
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo footer-logo">
+            <div class="logo-icon">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="15" stroke="url(#logo-grad-f)" stroke-width="2"/>
+                <path d="M10 20 C10 14, 14 10, 16 10 C18 10, 22 14, 22 20" stroke="url(#logo-grad-f)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <circle cx="10" cy="21" r="3" fill="url(#logo-grad-f)"/>
+                <circle cx="22" cy="21" r="3" fill="url(#logo-grad-f)"/>
+                <defs>
+                  <linearGradient id="logo-grad-f" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#a78bfa"/>
+                    <stop offset="0.5" stop-color="#60a5fa"/>
+                    <stop offset="1" stop-color="#f472b6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-name">NEW TALENT</span>
+              <span class="logo-sub">ESCOLA DE DJ</span>
+            </div>
+          </a>
+          <p class="footer-desc">Escola de DJ em Balneário Camboriú. Formamos DJs e produtores com metodologia prática, equipamentos profissionais e verdadeiro pertencimento à cena musical.</p>
+          <div class="footer-social">
+            <!-- INSTAGRAM: troque o link abaixo -->
+            <a href="https://www.instagram.com/newtalent_escola_dj_balneario/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram da New Talent">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <!-- WHATSAPP: troque o número abaixo -->
+            <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="social-link social-link--wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da New Talent">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links de navegação -->
+        <div class="footer-nav">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+          </ul>
+        </div>
+
+        <!-- Serviços -->
+        <div class="footer-nav">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#cursos">Curso de DJ</a></li>
+            <li><a href="#cursos">Produção Musical</a></li>
+            <li><a href="#cursos">Locação de Equipamentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>Balneário Camboriú · SC</p>
+          <!-- WHATSAPP: troque o número abaixo -->
+          <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="footer-wa-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 New Talent Escola de DJ. Todos os direitos reservados. · Balneário Camboriú, SC</p>
+        <p class="footer-dev">Desenvolvido por <a href="https://instagram.com/levoratodj" target="_blank" rel="noopener noreferrer">Pedro Levorato</a> · <span>levoratodj</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+    BOTÃO FLUTUANTE – WhatsApp
+    WHATSAPP: troque o número abaixo
+  ==================================================== -->
+  <a href="https://wa.me/message/PWTWZ6KJNB2ZF1" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="float-label">Falar no WhatsApp</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
