@@ -476,10 +476,22 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 .hero-stats {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 0;
   animation: fade-in-up-hero .9s var(--ease-out) .85s both;
+  background: rgba(255, 255, 255, .04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 16px;
+  padding: 16px 24px;
+  width: fit-content;
 }
-.hero-stat { text-align: left; }
+.hero-stat {
+  text-align: center;
+  padding-inline: 20px;
+}
+.hero-stat:first-child { padding-left: 0; }
+.hero-stat:last-child  { padding-right: 0; }
 .stat-value {
   display: block;
   font-family: var(--font-heading);
@@ -489,7 +501,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   line-height: 1;
 }
 .stat-label {
-  font-size: .75rem;
+  font-size: .7rem;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: .08em;
@@ -497,8 +509,9 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 }
 .stat-sep {
   width: 1px;
-  height: 36px;
-  background: var(--border);
+  height: 32px;
+  background: rgba(255, 255, 255, .1);
+  flex-shrink: 0;
 }
 
 @keyframes fade-in-up-hero {
@@ -1540,6 +1553,14 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   .visual-container { width: 260px; height: 260px; }
   .headphones-icon  { width: 64px; height: 64px; }
 
-  .hero-stats { gap: 16px; }
+  .hero-stats {
+    gap: 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .hero-stat { padding-inline: 8px; }
+  .stat-value { font-size: 1.2rem; }
   .stat-value { font-size: 1.25rem; }
 }
