@@ -1443,6 +1443,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   }
   .hero-content { order: 1; }
   .hero-visual  { order: 2; }
+  .hero-wrapper { text-align: center; }
   .hero-subtitle, .hero-actions, .hero-stats { margin-inline: auto; }
   .hero-actions { justify-content: center; }
   .hero-stats   { justify-content: center; }
@@ -1472,6 +1473,33 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 
   .nav-links, .btn-nav { display: none; }
   .hamburger { display: flex; }
+
+  /* Visual do DJ sobe para o topo no mobile */
+  .hero-visual  {
+    order: 1;
+    margin-top: 8px;
+  }
+  .hero-content {
+    order: 2;
+    text-align: center;
+  }
+  .hero-wrapper {
+    padding-top: 20px;
+    gap: 24px;
+  }
+  .visual-container {
+    width: 260px;
+    height: 260px;
+    margin-inline: auto;
+  }
+  /* badges ficam visíveis no mobile mas menores */
+  .float-badge {
+    display: flex;
+    font-size: .65rem;
+    padding: 6px 10px;
+  }
+  .badge-tl { top: 4%; left: -2%; }
+  .badge-br { bottom: 4%; right: -2%; }
 
   .hero-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
 
