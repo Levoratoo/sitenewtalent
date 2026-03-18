@@ -1504,15 +1504,28 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
     width: 260px;
     height: 260px;
     margin-inline: auto;
+    overflow: visible;
   }
-  /* badges ficam visíveis no mobile mas menores */
+  /* badges reposicionados sobre o círculo no mobile */
   .float-badge {
     display: flex;
-    font-size: .65rem;
-    padding: 6px 10px;
+    font-size: .68rem;
+    padding: 7px 12px;
+    gap: 6px;
   }
-  .badge-tl { top: 4%; left: -2%; }
-  .badge-br { bottom: 4%; right: -2%; }
+  .badge-tl {
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+  }
+  .badge-br {
+    bottom: -14px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    animation-delay: 2.5s;
+  }
 
   .hero-title { font-size: clamp(2.5rem, 10vw, 3.5rem); }
 
@@ -1537,8 +1550,6 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 
   .whatsapp-float { bottom: 20px; right: 20px; padding: 14px; border-radius: 50%; }
   .float-label { display: none; }
-
-  .badge-tl, .badge-br { display: none; }
 
   .hero-badge { font-size: .6875rem; }
 }
