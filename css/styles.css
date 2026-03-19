@@ -1001,6 +1001,10 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
 .produzir-underline {
   position: relative;
   display: inline-block;
+  filter:
+    drop-shadow(0 0 8px rgba(59, 130, 246, .46))
+    drop-shadow(0 0 18px rgba(37, 99, 235, .42))
+    drop-shadow(0 0 34px rgba(14, 165, 233, .24));
 }
 .produzir-underline::after {
   content: '';
@@ -1011,6 +1015,9 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   width: 0;
   border-radius: 2px;
   background: linear-gradient(90deg, var(--purple-light), var(--blue-light), var(--magenta-light));
+  box-shadow:
+    0 0 14px rgba(56, 189, 248, .48),
+    0 0 28px rgba(37, 99, 235, .22);
   animation: underline-grow .9s cubic-bezier(.22,1,.36,1) .8s forwards;
 }
 @keyframes underline-grow {
@@ -1752,7 +1759,7 @@ button { border: none; background: none; cursor: pointer; font: inherit; }
   min-height: 0;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  margin-top: 0;
+  margin-top: 8px;
 }
 
 .unit-service-card {
